@@ -27,22 +27,10 @@ guido = Usuario("Guido van Rossum", "guido@python.com")
 monty = Usuario("Monty Python", "monty@python.com")
 jimmy = Usuario("Jimmy Duarte", "jimmy@duarte.com")
 
-#Uso de metodos 
-#guido
-guido.make_deposit(1000)
-guido.make_deposit(1000)
-guido.make_deposit(1000)
-guido.make_withdrawal(50)
-#Monty
-monty.make_deposit(1000)
-monty.make_deposit(1000)
-monty.make_withdrawal(50)
-monty.make_withdrawal(50)
-#Jimmy
-jimmy.make_deposit(1000)
-jimmy.make_withdrawal(50)
-jimmy.make_withdrawal(50)
-jimmy.make_withdrawal(50)
+#Uso de metodos encadenados
+guido.make_deposit(1000).make_deposit(1000).make_deposit(1000).make_withdrawal(50)
+monty.make_deposit(1000).make_deposit(1000).make_withdrawal(50).make_withdrawal(50)
+jimmy.make_deposit(1000).make_withdrawal(50).make_withdrawal(50).make_withdrawal(50)
 
 #uso metodo tranferencia
 guido.transfer_money(jimmy,1000)
