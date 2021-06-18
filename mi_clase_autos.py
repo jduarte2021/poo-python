@@ -1,9 +1,15 @@
-class Auto():
+class Auto:
+
+
+    
     def __init__(self, marca, modelo):
         self.marca = marca
         self.modelo = modelo
         self.km = 0
         self.total_autos = 0
+
+
+
 
     def __str__(self):
         return f"{self.marca} - {self.modelo}"

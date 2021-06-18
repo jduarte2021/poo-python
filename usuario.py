@@ -4,6 +4,9 @@ class Usuario:
         self.email = email
         self.balance_cuenta = 0
 
+    def __str__(self):
+        return f"{self.nombre}, {self.email}"
+
     #Definicion de metodos
     #Deposito
     def make_deposit(self, amount):
@@ -51,5 +54,7 @@ guido.transfer_money(jimmy,1000)
 guido.display_user_balance()
 monty.display_user_balance()
 jimmy.display_user_balance()
+
+print(jimmy)
 
 
